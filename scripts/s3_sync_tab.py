@@ -9,8 +9,8 @@ def on_ui_tabs():
     with gr.Blocks(analytics_enabled=False) as ui_component:
         syncBtn = gr.Button(value="Sync Now")
         with gr.Box():
-            bucketTxt = gr.TextBox(label="S3 Bucket", value="s3://bucket-name")
-            folderTxt = gr.TextBox(label="S3 Folder", value="output")
+            bucketTxt = gr.Textbox(label="S3 Bucket", value="s3://bucket-name")
+            folderTxt = gr.Textbox(label="S3 Folder", value="output")
             with gr.Row():
                 optionRadio = gr.Radio(["sync", "copy", "move"], label="Action", info="S3 command?"),
         syncBtn = gr.Button(value="Sync")
